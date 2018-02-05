@@ -69,7 +69,7 @@ ENV USER_DIR \home\user
 RUN cd $USER_DIR
 ```
 
-### COPY <source> <file system of container> - copy folder or files from **source** in your container
+### COPY <source> <file system of container> - copy folder or files from **source** to your container
 
 ```dockerfile
 COPY . .
