@@ -49,7 +49,7 @@ CMD node server.js
 
 Instructions for dokerfile
 
- ### FROM - base image for you image
+ ### FROM - base image for your image
 ```dockerfile
 FROM ubuntu:16.04
 ```
@@ -69,3 +69,9 @@ ENV USER_DIR \home\user
 RUN cd $USER_DIR
 ```
 
+### COPY <source> <file system of container> - copy folder or files from **source** in your container
+
+```dockerfile
+COPY . .
+```
+Copy files from current folder to current (default root) folder
